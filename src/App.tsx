@@ -1,7 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import icon from '../assets/icon.svg';
-import './App.global.css';
+import React from 'react'
+import icon from '../assets/icon.svg'
+import './App.global.css'
 
 const Hello = () => {
   return (
@@ -37,15 +36,9 @@ const Hello = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Hello} />
-      </Switch>
-    </Router>
-  );
+  return <Hello />
 }
